@@ -53,11 +53,17 @@ export default function Learn({ onBack, darkMode }: LearnProps) {
           </p>
         </div>
 
-        <div>
-          <h2 className="text-xl font-semibold mt-6">Animated Video</h2>
-          <a href="https://www.youtube.com/watch?v=X8jsijhllIA" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-            Click here to watch
-          </a>
+        <div className="mt-6">
+          <h2 className="text-xl font-semibold mb-4">Animated Video</h2>
+          <div className="aspect-w-16 aspect-h-9 w-full max-w-3xl mx-auto">
+            <iframe
+              className="w-full h-[400px] rounded-lg shadow-lg"
+              src="https://www.youtube.com/embed/X8jsijhllIA"
+              title="Hamming Code Explanation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>

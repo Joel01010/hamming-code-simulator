@@ -16,7 +16,7 @@ const TeamMember = ({ name, regNo, role, github, linkedin, email, image }: {
       <img
         src={image}
         alt={name}
-        className="w-40 h-40 rounded-full border-4 border-[#FFB300] shadow-lg object-cover mb-4"
+        className="w-32 h-32 rounded-full border-4 border-[#FFB300] shadow-lg object-cover mb-4"
         onError={(e) => {
           const target = e.target as HTMLImageElement;
           target.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=FFB300&color=fff';
