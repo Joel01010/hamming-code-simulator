@@ -205,14 +205,14 @@ export function DecoderPanel({ darkMode }: DecoderPanelProps) {
                 />
               </Card>
 
-              <Card className={`p-6 shadow-lg ${darkMode ? 'bg-[#2a2a2a] border-2 border-gray-700' : 'bg-[#FFFFFF] border-2 border-gray-300'}`}>
+              <Card className={`p-5 shadow-lg ${darkMode ? 'bg-[#2a2a2a] border-2 border-gray-700' : 'bg-[#FFFFFF] border-2 border-gray-300'}`}>
                 <div className="flex items-center gap-2 mb-4">
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center ${darkMode ? 'bg-[#FFB300]/20' : 'bg-[#FFB300]/20'}`}>
                     <span className={darkMode ? 'text-[#FFB300]' : 'text-[#24292F]'}>4</span>
                   </div>
                   <h3 className={darkMode ? 'text-[#FFB300]' : 'text-[#24292F]'}>Extracted Data</h3>
                 </div>
-                <div className={`p-4 rounded-lg font-mono text-lg border-2 ${darkMode ? 'bg-[#2a2a2a] border-gray-700 text-[#FFB300]' : 'bg-[#FFFFFF] border-gray-300 text-[#24292F]'}`}>
+                <div className={`p-8 rounded-lg font-mono text-lg border-2 overflow-x-auto break-all ${darkMode ? 'bg-[#2a2a2a] border-gray-700 text-[#FFB300]' : 'bg-[#FFFFFF] border-gray-300 text-[#24292F]'}`}>
                   {decodedResult.dataBits.join('')}
                 </div>
                 <p className={`text-sm mt-2 ${darkMode ? 'text-[#FFB300]/70' : 'text-[#24292F]/70'}`}>
